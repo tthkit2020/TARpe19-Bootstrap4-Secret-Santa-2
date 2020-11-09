@@ -1,0 +1,22 @@
+:root
+{
+    --santa-red: #A31123;
+    --santa-red-alpha: rgba(163, 17, 34, 0.4);
+    --santa-green: rgb(4, 66, 14);
+}
+html
+{
+    font-family: 'Montserrat', sans-serif;
+}
+.container-fluid
+{
+    border: 1px solid black;
+}
+.row
+{
+    border: 2px solid green;
+}
+.col-sm-6
+{
+    border: 1px dotted black;
+}
