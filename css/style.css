@@ -1,22 +1,101 @@
 :root
 {
+    --BG-color: rgb(27, 27, 27);
     --santa-red: #A31123;
     --santa-red-alpha: rgba(163, 17, 34, 0.4);
-    --santa-green: rgb(4, 66, 14);
+    --santa-green: rgb(0, 114, 19);
 }
-html
+
+body
 {
-    font-family: 'Montserrat', sans-serif;
+    /*
+    */
+    background-color: var(--BG-color);
 }
+
 .container-fluid
 {
-    border: 1px solid black;
+    padding: 0;
 }
-.row
+
+#title
 {
-    border: 2px solid green;
+    background-color: var(--santa-red);
+    padding: 3% 15%;
+    color: white;
 }
-.col-sm-6
+
+h1{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+/*NAVBAR*/
+.navbar
 {
-    border: 1px dotted black;
+    padding-bottom: 4.5rem;
+    padding-left: 0;
+    width: auto;
+}
+
+.nav-item
+{
+    padding: 0.1rem;
+}
+
+.nav-link
+{
+    font-size: 1.3rem;
+}
+
+.navbar-brand
+{
+    font-family: 'Ubuntu';
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.download-btn 
+{
+    margin: 4% 3% 4% 0;
+}
+
+.title-image
+{
+    margin: 2% 3% 2% 3%;
+    width: 55%;
+    transform: rotate(10deg);
+}
+
+/*Features Section*/
+
+#features
+{
+    padding: 3% 15%;
+    background-color: var(--BG-color);
+}
+
+.feature-box
+{
+    text-align: center;
+    padding: 5%;
+}
+
+.feature-box h3
+{
+    font-family: 'Montserrat';
+    color: white;
+}
+.feature-box p {
+    color: #8f8f8f;
+}
+.feature-box i {
+    color: var(--santa-red);
+    margin-bottom: 1rem;
+}
+.feature-box i:hover
+{
+    color: var(--santa-green);
 }

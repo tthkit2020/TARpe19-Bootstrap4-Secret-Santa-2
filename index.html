@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/3d8af50c2d.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"> 
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <!-- Style CSS -->
     <link rel="stylesheet" href="css/style.css">
     <title>Secret Santa</title>
 </head>
@@ -15,16 +18,65 @@
     <div class="container-fluid">
         <section id="title">
             <!--Navigation-->
-            <div class="nav navbar navbar-expand-md navbar-dark">
+            <nav class="nav navbar navbar-expand-md navbar-dark">
                 <a href="#" class="navbar-brand">Secret Santa</a>
-                <div class="button navbar-toggler" type="button" data-toggle="collapse"
-                data-target="navContent" aria-controls="navContent" aria-expanded="false"
+                <button class="button navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navContent" aria-controls="navContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse justify-content-end" id="navContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Download</a>
+                        </li>
+                    </ul>
+
+                </div>
+                
+            </nav>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Become a Secret Santa yourself</h1>
+                    <button class="btn btn-dark btn-lg download-btn"><i class="fab fa-apple"></i> Download</button>
+                    <button class="btn btn-outline-light btn-lg download-btn"><i class="fab fa-google-play"></i> Download</button>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/iphone6.png" alt="" class="title-image">
                 </div>
             </div>
 
         </section>
+
+        <section id="features">
+            <div class="row">
+                <div class="col-lg-4 feature-box">
+                    <i class="fas fa-sleigh fa-3x"></i>
+                    <h3>Find Yourself a Secret Santa</h3>
+                    <p>Enjoy the holiday spirit to the fullest.</p>
+                </div>
+                <div class="col-lg-4 feature-box">
+                    <i class="fas fa-gifts fa-3x"></i>
+                    <h3>Become a Secret Santa Yourself</h3>
+                    <p>Bring joy to the world!</p>
+                </div>
+                <div class="col-lg-4 feature-box">
+                    <i class="fas fa-gift fa-3x"></i>
+                    <h3>Manage Your Wishlist</h3>
+                    <p>Keep the record of what you get and what you give.</p>
+                </div>
+            </div>
+        </section>
+
+
 
     </div>
 
